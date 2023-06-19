@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Street Block</title>
+    <style>
+      body {
+        background-color: #223;
+        color: white;
+      }
+      .street {
+        border: 1px dotted red;
+      }
+      .house {
+        width: 150px;
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      .house-roof {
+        width: 0px;
+        height: 0px;
+        border: 75px solid rgb(113, 31, 21);
+        border-top-width: 0px;
+        border-left-color: transparent;
+        border-right-color: transparent;
+      }
+      .house-wall {
+        background-color: wheat;
+        width: 150px;
+        height: 150px;
+      }
+      .house-window {
+        border: 5px solid rgb(113, 31, 21);
+        background-color: lightblue;
+        width: 50px;
+        height: 50px;
+        transform: translateX(45px) translateY(45px);
+      }
+      .house-win {
+        border-right: 4px solid rgb(113, 31, 21);
+        width: 23px;
+        height: 50px;
+      }
+
+      .building-tall {
+        background-color: grey;
+        height: 300px;
+        width: 100px;
+        display: inline-block;
+      }
+      .door1 {
+        border: 5px solid black;
+        background-color: black;
+        height: 20px;
+        width: 10px;
+        transform: translateX(40px) translateY(170px);
+      }
+      .door2 {
+        border: 5px solid black;
+        background-color: black;
+        height: 20px;
+        width: 10px;
+        transform: translateX(40px) translateY(270px);
+      }
+      .building-small {
+        background-color: dimgray;
+        height: 200px;
+        width: 100px;
+        display: inline-block;
+      }
+      .cloud {
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 20px;
+      }
+      .sun {
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 20px;
+      }
+
+      .window1 {
+        border-left: 17px dashed darkcyan;
+        border-right: 17px dashed darkcyan;
+        width: 67px;
+        height: 130px;
+      }
+      .window2 {
+        border-right: 17px dashed darkcyan;
+        width: 24px;
+        height: 130px;
+      }
+      .window3 {
+        border-top: 25px solid lightblue;
+        border-bottom: 25px solid lightblue;
+        width: 100px;
+        height: 160px;
+      }
+      .window4 {
+        border-top: 25px solid lightblue;
+        border-bottom: 25px solid lightblue;
+        margin-top: 40px;
+        width: 100px;
+        height: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="street">
+      <div class="house">
+        <div class="house-roof"></div>
+        <div class="house-wall">
+          <div class="house-window"><div class="house-win"></div></div>
+        </div>
+      </div>
+      <div class="building-tall">
+        <div class="door2"></div>
+        <div class="window3"><div class="window4"></div></div>
+      </div>
+      <div class="cloud">
+        <img
+          src="https://icons.iconarchive.com/icons/gartoon-team/gartoon-weather/48/weather-clouds-icon.png"
+          alt="cloud">
+      </div>
+      <div class="building-small">
+        <div class="door1"></div>
+        <div class="window1"><div class="window2"></div></div>
+      </div>
+      <div class="sun">
+        <img
+          src="https://icons.iconarchive.com/icons/gartoon-team/gartoon-weather/48/weather-clouds-sun-icon.png"
+          alt="sun">
+      </div>
+    </div>
+  </body>
+</html>
